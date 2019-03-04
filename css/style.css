@@ -36,27 +36,41 @@ canvas {
 .header {
     width: 100%;
     text-align: center;
-    color: rgb(45, 223, 223);
+    color: #5CA17C; /*non-webkit fallback*/
+    background: -webkit-linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 190px;
   letter-spacing: 5px;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   text-transform: uppercase;
+  /* font-family: 'Prosto One', cursive; */
   opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800px;
+  margin: 0
 }
+
 img {
     width: 3%;
 }
+
 .icon-list {
     flex-direction: row;
     list-style: none;
     text-align: center;
+    text-decoration: none;
+    padding-right: 30px;
 }
 
 li {
-    display: inline;
+    text-align: center;
+    display: initial;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -69,4 +83,22 @@ li {
 
 .heart {
     color: #f95959;
+}
+
+.fade-right {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: faderight;
+    animation-name: faderight;
+    text-align: center;
+}
+
+/* @-webkit-keyframes faderight {
+  0% {opacity: 0;-webkit-transform: translateX(1000px);}
+  100% {opacity: 1;-webkit-transform: translateX(1000px); } 
+} */
+
+@keyframes faderight {
+  0% {opacity: 0.3; transform: translateX(0px);}
+  100% {opacity: 1; transform: translateX(100); } 
 }

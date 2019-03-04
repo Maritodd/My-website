@@ -1,1 +1,13 @@
-<?xml version="1.0" ?><svg height="512" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs12"/><g id="g5991"><rect height="512" id="rect2987" rx="64" ry="64" style="fill:#3b5998;fill-opacity:1;fill-rule:nonzero;stroke:none" width="512" x="0" y="0"/><path d="M 286.96783,455.99972 V 273.53753 h 61.244 l 9.1699,-71.10266 h -70.41246 v -45.39493 c 0,-20.58828 5.72066,-34.61942 35.23496,-34.61942 l 37.6554,-0.0112 V 58.807915 c -6.5097,-0.87381 -28.8571,-2.80794 -54.8675,-2.80794 -54.28803,0 -91.44995,33.14585 -91.44995,93.998125 v 52.43708 h -61.40181 v 71.10266 h 61.40039 v 182.46219 h 73.42707 z" id="f_1_" style="fill:#ffffff"/></g></svg>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#3a589b" id="svg_1" d="m13.892,24.122999l3.357,0l0,-8.124l2.239,0l0.296999,-2.799l-2.535999,0l0.003,-1.401999c0,-0.73 0.07,-1.121 1.116999,-1.121l1.4,0l0,-2.8l-2.24,0c-2.69,0 -3.636999,1.358 -3.636999,3.642l0,1.681l-1.677,0l0,2.8l1.677,0l0,8.122999z"/>
+  <path id="svg_7" fill="#3a589b" d="m16,1c8.271,0 15,6.729 15,15s-6.729,15 -15,15s-15,-6.729 -15,-15s6.729,-15 15,-15m0,-1c-8.837,0 -16,7.163 -16,16s7.163,16 16,16s16,-7.163 16,-16s-7.163,-16 -16,-16l0,0z"/>
+  <path id="svg_11" fill="#3a589b" d="m16,3.007c7.165001,0 12.993,5.829 12.993,12.993s-5.829,12.993 -12.993,12.993s-12.993,-5.829 -12.993,-12.993s5.828,-12.993 12.993,-12.993m0,-0.5c-7.453,0 -13.493,6.04 -13.493,13.493s6.04,13.493 13.493,13.493s13.493,-6.041 13.493,-13.493s-6.041,-13.493 -13.493,-13.493l0,0z"/>
+ </g>
+</svg>
