@@ -40,22 +40,20 @@ canvas {
     background: -webkit-linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-top: 50px;
 }
 
 h1 {
   font-size: 190px;
   letter-spacing: 5px;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  /* font-family: 'Prosto One', cursive; */
-  opacity: 1;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800px;
-  margin: 0
+  margin: 0;
+  /* opacity: 1; */
 }
 
 img {
-    width: 3%;
+    width: 3.5%;
 }
 
 .icon-list {
@@ -64,6 +62,8 @@ img {
     text-align: center;
     text-decoration: none;
     padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 li {
@@ -86,19 +86,50 @@ li {
 }
 
 .fade-right {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: faderight;
+    -webkit-animation-duration: 2s;
     -webkit-animation-name: faderight;
     animation-name: faderight;
-    text-align: center;
+    animation-duration: 2s;
 }
 
-/* @-webkit-keyframes faderight {
-  0% {opacity: 0;-webkit-transform: translateX(1000px);}
-  100% {opacity: 1;-webkit-transform: translateX(1000px); } 
-} */
+@-webkit-keyframes faderight {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
 
 @keyframes faderight {
-  0% {opacity: 0.3; transform: translateX(0px);}
-  100% {opacity: 1; transform: translateX(100); } 
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+
+@-moz-keyframes faderight {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+
+/* .animation {
+    -moz-animation-duration: 2s;
+    -moz-animation-name: anima;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: anima;
+    animation-name: anima;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+
+@-webkit-keyframes anima {
+    0% {top: -100px; opacity: 0}
+    100% {top: 110px; opacity: 1}
+}
+
+@keyframes anima {
+    from {top: -100px; opacity: 0}
+    to {top: 110px; opacity: 1}
+}
+
+@-moz-keyframes anima {
+    0% {top: -100px; opacity: 0}
+    100% {top: 110px; opacity: 1}
+} */
