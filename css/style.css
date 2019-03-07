@@ -43,6 +43,7 @@ canvas {
     padding-top: 50px;
 }
 
+
 h1 {
   font-size: 190px;
   letter-spacing: 5px;
@@ -111,28 +112,53 @@ li {
   }
 
 .animation {
-    -moz-animation-duration: 2s;
+    -moz-animation-duration: 2.5s;
     -moz-animation-name: anima;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 2.5s;
     -webkit-animation-name: anima;
     animation-name: anima;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes anima {
-    0% {top: -100px; opacity: 0}
-    100% {top: 110px; opacity: 1}
+    0% {top: -30px; opacity: 0}
+    100% {top: 0px; opacity: 1}
 }
 
 @keyframes anima {
-    from {top: -100px; opacity: 0}
-    to {top: 110px; opacity: 1}
+    0% {top: -30px; opacity: 0}
+    100% {top: 0px; opacity: 1}
 }
 
 @-moz-keyframes anima {
-    0% {top: -100px; opacity: 0}
-    100% {top: 110px; opacity: 1}
+    0% {top: -30px; opacity: 0}
+    100% {top: 0px; opacity: 1}
+}
+
+.footer-anim {
+    -moz-animation-duration: 3.5s;
+    -moz-animation-name: foot-anim;
+    -webkit-animation-duration: 3.5s;
+    -webkit-animation-name: foot-anim;
+    animation-name: foot-anim;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes foot-anim {
+    0% {top: 20px; opacity: 0}
+    100% {top: 0px; opacity: 1}
+}
+
+@keyframes foot-anim {
+    0% {top: 20px; opacity: 0}
+    100% {top: 0px; opacity: 1}
+}
+
+@-moz-keyframes foot-anim {
+    0% {top: 20px; opacity: 0}
+    100% {top: 0px; opacity: 1}
 }
 
 @media screen and (max-width: 1050px) {
