@@ -38,6 +38,7 @@ canvas {
     text-align: center;
     color: #5CA17C; /*non-webkit fallback*/
     background: -webkit-linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 50px;
@@ -137,28 +138,28 @@ li {
 }
 
 .footer-anim {
-    -moz-animation-duration: 3.5s;
+    -moz-animation-duration: 4s;
     -moz-animation-name: foot-anim;
-    -webkit-animation-duration: 3.5s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-name: foot-anim;
     animation-name: foot-anim;
-    animation-duration: 3.5s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes foot-anim {
-    0% {top: 20px; opacity: 0}
-    100% {top: 0px; opacity: 1}
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 @keyframes foot-anim {
-    0% {top: 20px; opacity: 0}
-    100% {top: 0px; opacity: 1}
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 @-moz-keyframes foot-anim {
-    0% {top: 20px; opacity: 0}
-    100% {top: 0px; opacity: 1}
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 @media screen and (max-width: 1050px) {
