@@ -76,6 +76,15 @@ li {
     padding-right: 10px;
 }
 
+.zoom img {  
+    transition: .2s;
+}
+
+.zoom:hover img {
+    width: 3.75%;
+    transition: .2s;
+}
+
 .footer {
     color: #FFE4C4;
     font-size: 1em;
