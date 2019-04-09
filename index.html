@@ -32,9 +32,30 @@
         Currently in Dream 💭.</p>
       </footer>
     </main>
-    <div class="background" id="particle-js">
-    	<canvas id="canvas"></canvas>
-    </div>
-    <script type="text/javascript" src="js/main.js" ></script>
+    
+      <canvas class="background"></canvas>
+      <script src="dist/particles.js"></script>
+      <script>
+        window.onload = function() {
+          Particles.init({
+            selector: '.background',
+            responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 90,
+                minDistance: 120
+              }
+            }, {
+              breakpoint: 415,
+              options: {
+                maxParticles: 50,
+                minDistance: 120,
+              }
+            }
+          ]
+        });
+      };
+      </script>
   </body>
 </html>
