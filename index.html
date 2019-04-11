@@ -3,13 +3,24 @@
   <head>
     <title>Maritodd</title>
     <meta charset="utf-8">
-    <meta name="description" content="Maritodd, Ghost, Yaroslav Melnyk live here" />
+    <meta name="description" content="Maritodd, Yaroslav Melnyk live here" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="Maritodd, Ghost, Melnyk, Yaroslav, Yaroslav Melnyk, Ярослав Мельник, Мельник, Ярослав, " />
-    <meta name="author" content="Maritodd" />
+    <meta name="author" content="Yaroslav Melnyk A.K.A. Maritodd" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 500, 600, 700" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400, 500, 600, 700" rel="stylesheet"/> 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137810831-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137810831-2');
+</script>
+
+  </head>
   <body class="body">
     <main class="main">
       <header class="header fade-right">
@@ -32,7 +43,6 @@
         Currently in Dream 💭.</p>
       </footer>
     </main>
-    
       <canvas class="background"></canvas>
       <script src="dist/particles.js"></script>
       <script>
@@ -44,13 +54,13 @@
               breakpoint: 768,
               options: {
                 maxParticles: 90,
-                minDistance: 120
+                minDistance: 100
               }
             }, {
               breakpoint: 415,
               options: {
                 maxParticles: 50,
-                minDistance: 120,
+                minDistance: 90,
               }
             }
           ]

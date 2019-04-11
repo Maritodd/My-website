@@ -36,12 +36,19 @@
 .header {
     width: 100%;
     text-align: center;
-    color: #5CA17C; /*non-webkit fallback*/
+    color:  #00eeff; /*non-webkit fallback*/
+    /* background: linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
     background: -webkit-linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
+    background: -moz-linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
+    background: -o-linear-gradient(0deg, rgb(0, 255, 191), rgb(0, 255, 255),	rgb(0, 191, 255), rgb(0, 0, 255),rgb(128, 0, 255),rgb(225, 0, 255),  rgb(255, 0, 255));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; */
     padding-top: 50px;
+    text-decoration: none;
 }
 
 @supports (-ms-ime-align:auto) {
@@ -107,12 +114,12 @@ li {
 }
 
 .fade-right {
-    -moz-animation-duration: 2s;
+    -moz-animation-duration: 2.5s;
     -moz-animation-name: faderight;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 2.5s;
     -webkit-animation-name: faderight;
     animation-name: faderight;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes faderight {
@@ -130,7 +137,7 @@ li {
     100% {opacity: 1}
   }
 
-.animation {
+  .animation {
     -moz-animation-duration: 2.5s;
     -moz-animation-name: anima;
     -webkit-animation-duration: 2.5s;
@@ -138,6 +145,10 @@ li {
     animation-name: anima;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    opacity: 0;
 }
 
 @-webkit-keyframes anima {
@@ -155,6 +166,7 @@ li {
     100% {top: 0px; opacity: 1}
 }
 
+
 .footer-anim {
     -moz-animation-duration: 4s;
     -moz-animation-name: foot-anim;
@@ -163,6 +175,10 @@ li {
     animation-name: foot-anim;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    opacity: 0;
 }
 
 @-webkit-keyframes foot-anim {
@@ -198,15 +214,11 @@ li {
         padding: 0;
         font-size: 50px;
     }
+    .header {
+        color: #00ffff;
+    }
     img {
         width: 12%;
-    }
-    .fade-right {
-        -webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-        animation: none !important; 
     }
 } 
 
